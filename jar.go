@@ -73,6 +73,9 @@ type Options struct {
 	// for bar.co.uk.
 	PublicSuffixList PublicSuffixList
 
+	// Storage is the cookie entry persistence implementation.
+	//
+	// If not provided, InMemoryStorage will be used.
 	Storage Storage
 }
 
